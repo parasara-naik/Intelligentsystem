@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Predictor App</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #007BFF; /* Header color */
+        }
+
+        .white-box {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        ol, ul {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-left: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        .caution {
+            color: #FF0000; /* Red color for caution */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Price Predictor App</h1>
+
+    <div class="white-box">
+        <h2>Welcome to the Price Predictor App!</h2>
+    </div>
+
+    <div class="white-box">
+        <h2>How to Use</h2>
+
+        <ol>
+            <li><strong>Property Details:</strong> Choose the type of property and the preferred sector.</li>
+
+            <li><strong>Area and Features:</strong> Enter the built-up area, age of possession, and customize other features according to your preferences.</li>
+
+            <li><strong>Click "Predict":</strong> Click the "Predict" button to get an instant estimate of the property price.</li>
+        </ol>
+        <p class="caution">Caution: Both tree models are not suitable for extrapolation and may produce inaccurate results for invalid inputs.</p>
+    </div>
+
+    <div class="white-box">
+        <h2>Methods Used</h2>
+
+        <ul>
+            <li><strong>Data Cleaning:</strong> Utilized regular expressions and pandas for effective data cleaning.</li>
+            <li><strong>Feature Engineering:</strong> Created new columns based on clustering algorithms to enhance model performance.</li>
+            <li><strong>Feature Extraction:</strong> Employed tree-based feature extraction methods and used SHAP, permutation, and combination techniques for extracting impactful features.</li>
+            <li><strong>Model Selection:</strong> Explored Extra Tree Regressor and XGBoost Regressor. Chose XGBoost Regressor and performed randomized search CV and cross-validation for a good bias-variance trade-off.</li>
+        </ul>
+        <p>Source of Data: <a href="https://www.99acres.com/" target="_blank">99acres.com</a></p>
+    </div>
+
+</body>
+
+</html>
